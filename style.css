@@ -1,0 +1,289 @@
+/* -----------------------------PARAMETRES GÉNÉRAUX ---------------------------------*/
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div-wrapper{
+    padding: 0 3% 0 2%;
+}
+
+body{
+  font-family: 'helvetica', sans-serif !important;
+  margin: 0px;
+}
+
+:root {
+  --vertcanard : #046F78;
+}
+  /*------------------------------------ NAVBAR ------------------------------------ */
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    padding-right: 2%;
+    /* margin-bottom: 5%; */
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  /* -------------------- H1 NAVBAR -H1 NAVBAR------------ */
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #046F78;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  /* --------------------MES LIENS NAV -------------------- */
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav .nav-links:nth-child(1){
+    font-weight: bold;
+  }
+  
+  .nav > .nav-links > a:hover {
+
+    text-decoration: underline var(--vertcanard) 7px;
+    font-weight: bold;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: white;
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid teal;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;  
+    }
+
+    /* --------------MENU BURGER  - LIENS NAV  -----------------------------*/
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+      color: white;
+    }
+    .nav > .nav-links > a:hover {
+        background-color: rgb(4, 112, 112);
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(35vh - 50px);
+      overflow-y: auto;
+      display:flex;
+      flex-direction:column;
+      background-color: teal;
+      color: white;
+    }
+  }
+  /*------------------------------------ PAGE D'ACCUEIL ------------------------------- */
+
+  .section-1 {
+    display: flex;
+    justify-content: space-between;
+    background: url('./accueil/img-accueil.png') right no-repeat;
+    /* background-position-y: 5%; */
+    background-size:70%;
+    height: 100vh;
+    align-items: flex-end;
+    margin-bottom: 7%;
+  }
+
+  .presentation-accueil {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .boutons-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .section-1 h1 {
+    font-size: 5vw;
+    line-height: 200%;
+    margin-bottom: 10%;
+  }
+
+  .section-1 h2 {
+    line-height: 200%;
+    color: #046F78;
+    font-size: 1.8rem;
+    /* margin-bottom: 3%; */
+  }
+
+  .texte-accueil {
+    margin-left: 6%;
+    margin-bottom: 1%;
+  }
+
+  .section-1 img {
+    /* height: 200%; */
+    margin-left: 2%;
+    margin-bottom: 5%;
+  }
+
+  .section-1 .mail {
+    margin-bottom: 5%;
+  }
+
+  .section-1 a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .section-1 button {
+   background-color: var(--vertcanard);
+   margin: 0 10% 5% 0; 
+   background-color:#046e78;
+   border-radius:6px;
+   border:1px solid black;
+   cursor:pointer;
+   color:#ffffff;
+   font-size:1rem;
+   font-weight:bold;
+   padding:3% 10%;
+   text-decoration:none;
+  }
+
+  .section-1 button:hover{
+    border: 1px solid white;
+    color:var(--vertcanard);
+    background-color: rgba(223, 215, 215, 0.753);
+  }
+
+  .section-1 button a:hover{
+    color:var(--vertcanard);
+  }
+
+  .section-1 .boutons-contacts {
+    margin-bottom: 4%;
+  }
+
+  .boutons-contacts .btn-linkedin {
+    padding:7% 26%;
+  }
+  /*------------------------------------ SECTION 3 ------------------------------------ */
+
+.column-one{
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  text-align: end;
+  margin-right: 2%;
+  height: 100vh;
+  /* margin-right: 10%; */
+}
+
+.column-one p {
+  font-size: 1.1rem;
+  padding-top: 7.5%;
+}
+
+.titre-description{
+  padding-top: 28%;
+  
+}
+
+.titre-para{
+  margin-bottom: 1%;
+  font-size: 2.3rem;
+}
+
+.date{
+  margin-bottom: 5%;
+}
+
+.motif-couleur{
+  width: 155%;
+}
+
+.column-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 8%;
+}
+
+.mescolonnes {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5%;
+}
+
+.projets{
+  text-align: left;
+  padding-left: 2%;
+}
+
+.projets,
+.theatre {
+  font-size: 3vw;
+}
+
+.big{
+  max-height: 85%;
+  width: auto;
+}
+
+/* .column-three img{
+  margin-bottom:5%;
+} */
+
+/* .wrapper-3{
+  padding-bottom: 6%;
+} */
+
+
+
