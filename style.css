@@ -10,12 +10,17 @@
 }
 
 body{
-  font-family: 'helvetica', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 200;
   margin: 0px;
 }
 
 :root {
   --vertcanard : #046F78;
+}
+
+.gras {
+  font-weight: bold;
 }
   /*------------------------------------ NAVBAR ------------------------------------ */
   .nav {
@@ -24,6 +29,7 @@ body{
     background-color: white;
     position: fixed;
     padding-right: 2%;
+    z-index: 10;
     /* margin-bottom: 5%; */
   }
   
@@ -169,9 +175,8 @@ body{
   }
 
   .section-1 img {
-    /* height: 200%; */
     margin-left: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 6.5%;
   }
 
   .section-1 .mail {
@@ -185,7 +190,7 @@ body{
 
   .section-1 button {
    background-color: var(--vertcanard);
-   margin: 0 10% 5% 0; 
+   margin: 0 10% 9% 0; 
    background-color:#046e78;
    border-radius:6px;
    border:1px solid black;
@@ -214,7 +219,121 @@ body{
   .boutons-contacts .btn-linkedin {
     padding:7% 26%;
   }
-  /*------------------------------------ SECTION 3 ------------------------------------ */
+
+  /*-------------------------SECTION 2 : PRESENTATION ------------------------------------ */
+  .section-2 {
+    height: 100vh;
+  }
+
+
+  .content-section2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-top: 5%;
+
+  }
+
+  .content-section2 p {
+    width: 43%;
+    padding: 0 7% O 0%;
+    line-height: 200%;
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .content-section2 .bande-couleur {
+    position: absolute;
+    right: 12%;
+    height: 82vh;
+    width: 9%;
+    z-index: 1;
+
+  }
+
+  .content-section2 .photo-laure {
+    width: auto;
+    max-height:60%;
+    position: absolute;
+    right: 17%;
+    /* right:15%; */
+    height: 82vh;
+    z-index: 2;
+  }
+
+  /*------------------------------------ SECTION 3 : OEXMELIN ------------------------------------ */
+
+  .section-3 {
+    display: flex;
+    height: 100vh;
+    padding-bottom: 5%;
+  }
+
+  /* .section-3 .col-img {
+    width: fit-content;
+  } */
+  .section-3 h2 {
+    font-size:3.4rem;
+  }
+  .section-3 .col-texte {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+  }
+  
+  .section-3 .projets{
+    padding:0 0 4% 0;
+  }
+
+  .section-3 .theatre{
+    text-align: end;
+    padding:4% 4% 4% 0;
+  }
+
+  .section-3 .collection-photos {
+    display: flex;
+    justify-content:end;
+    margin-top: 3%;
+  }
+
+  .section-3 .description {
+    /* display: flex;
+    flex-direction: column; */
+    align-items:flex-end; 
+    padding-top:28%;
+    padding-right: 15%;
+    width: 100%;
+    line-height: 150%;
+    text-align: justify;
+
+  }
+
+  .section-3 .description h3 {
+    font-size: 2rem;
+  }
+
+  .section-3 .description .titre-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .section-3 .bigpicture {
+    max-width: 100%; 
+    width: 175%;
+  }
+
+
+  .section-3 .col-img {
+    max-width: 90%;
+  }
+
+  .section-3 .smallpictures {
+    margin-left: .6%;
+  }
+
+
+  /*------------------------------------ SECTION 4 ------------------------------------ */
 
 .column-one{
   display: flex;
