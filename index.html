@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +14,8 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;600&display=swap');
   </style>
+
+  <script src="script.js" defer></script>
     <title>PORTFOLIO LAURE</title>
 </head>
 <body>
@@ -34,10 +38,10 @@
                 </div>
                 
                 <div class="nav-links">
-                  <a href="//github.io/jo_geek" target="_blank">PRÉSENTATION</a>
-                  <a href="http://stackoverflow.com/users/4084003/" target="_blank">PROJETS THÉÂTRE</a>
-                  <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">PROJETS CINÉMA</a>
-                  <a href="https://codepen.io/jo_Geek/" target="_blank">CONTACTS</a>
+                  <a href="#presentation" >PRÉSENTATION</a>
+                  <a href="#projets-theatre" >PROJETS THÉÂTRE</a>
+                  <a href="#projets-cinema">PROJETS CINÉMA</a>
+                  <a href="#contacts">CONTACTS</a>
                   <!-- <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a> -->
                 </div>
             </nav>
@@ -57,18 +61,18 @@
               </div>
 
               <div class="boutons-contacts">
-                <button class="btn-linkedin"><a href="https://www.linkedin.com/in/laure-mirroir-712941127/?originalSubdomain=fr">Linkedin</a></button>
-                <button>Instagram - Brainwatch</button>
-                <button>Instagram Personnel</button>
+                <button class="btn-linkedin"><a href="https://www.linkedin.com/in/laure-mirroir-712941127/?originalSubdomain=fr" target="_blank">Linkedin</a></button>
+                <button> <a href="https://instagram.com/brainwatch.chronicles?utm_medium=copy_link" target="_blank">Instagram - Brainwatch</a></button>
+                <button> <a href="https://instagram.com/monkey_donky?utm_medium=copy_link" target="_blank">Instagram Personnel</a></button>
               </div>
 
             </div>
             <!-- SECTION 2 : PRÉSENTATION------SECTION 2 : PRÉSENTATION---SECTION 2 -------: PRÉSENTATION---SECTION 2 : PRÉSENTATION------->
 
-            <div class="div-wrapper section-2">
+            <div class="div-wrapper section-2" id="presentation">
 
               <div class="content-section2">
-                <p> <span class="gras">Passionnée par le théâtre depuis petite,</span> Laure enchaîne des ateliers pratiques jusqu’au collège. 
+                <p> <span class="gras" >Passionnée par le théâtre depuis petite,</span> Laure enchaîne des ateliers pratiques jusqu’au collège. 
                   <br>
                   Arrivée au lycée, elle met cette passion entre parenthèses pour se concentrer sur <span class="gras">des études d’architecture d’intérieur.</span> Elle intègre en 2013 l’école de Condé à Paris dans laquelle elle fait <span class="gras">une MANAA et un BTS de Design d’Espace. </span><br> <br>                
                   Durant son cursus, elle souhaite revenir à ses premiers amours que sont <span class="gras">les arts de la scène et le cinéma</span> et mettre à profit sa formation pour se diriger vers le métier de <span class="gras">scénographe.</span>
@@ -83,7 +87,7 @@
             </div>
             <!-- ----------------------------ENTETE SECTION 3 ---------------------------- -->
     <!-- --------------------------DEBUT DIV WRAPPER GENERAL  -  DEBUT DIV WRAPPER GENERAL--------------------------------------- -->
-    <div class="div-wrapper section-3">
+    <!-- <div class="div-wrapper section-3"> -->
 
       <!-- --------------------------DEBUT DIV CONTENT GENERAL  -  DEBUT DIV CONTENT GENERAL--------------------------------------- -->
           <!-- <div class="div-content">
@@ -123,10 +127,10 @@
 
            <div class="section-3 div-wrapper">
 
-              <div class="col-texte">
+              <div class="col-texte" id="projets-theatre">
 
                 <div class="header">
-                  <h2 class="projets">PROJETS</h2>
+                  <h2 class="projets" >PROJETS</h2>
                   <img src="./motif-couleur.png" alt="" srcset="" class="motif-couleur">
                   <h2 class="theatre">THÉÂTRE</h2>
                 </div>
@@ -157,11 +161,136 @@
                 </div>
               </div>
 
+           </div>
+
+           <!----------------------------SECTION 4 : BALADE FLUVIALE  --------------------------->
+
+           <div class="section-4 div-wrapper">
+
+                       <div class="div-content">
+  
+            <div class="mescolonnes">
+                <div class="column-one">
+                  <div class="partie-theatre">
+                    <!-- <h2 class="projets">PROJETS</h2>
+                    <img src="./motif-couleur.png" alt="" srcset="" class="motif-couleur">
+                    <h2 class="theatre">THÉÂTRE</h2> -->
+                  </div> 
+                  <!------------------ TEXTE DESCRIPTION -----------------  -->
+
+                  <div class="titre-description">
+                    <h2 class="titre-para">Balade Fluviale</h2>
+                    <h4 class="date">2021</h4>
+                    <p>
+                      La compagnie Méliadès a présenté sa balade fluviale théâtralisée au bord du canal Saint-Denis.
+                      Au cours de cette traversée, le public est plongé dans la mémoire du canal.
+                      Deux guides comédiennes accompagnent le public dans les secrets et histoires insolites du canal.
+                    </p>
+                  </div>
+                
+              </div>
+
+              <div class="column-two">
+                <img src="Big.png" alt="balade fluviale" srcset="" class="big">
+              </div>
+              
+              <div class="column-three">
+                <img src="small1.png" alt="" class="small1">
+                <img src="small2.png" alt="" class="small2">
+                <img src="small3.png" alt="" class="small3">
+              </div>
+            </div> 
+
 
            </div>
+
+
         <!-- --------------------------FIN DIV CONTENT GENERAL  -  FIN DIV CONTENT GENERAL--------------------------------------- -->        
         </div>
     <!-- --------------------------FIN DIV WRAPPER GENERAL  -  FIN DIV WRAPPER GENERAL--------------------------------------- -->
     </div>
+
+    <div class="div-wrapper section-5">
+
+      <div class="div-content d-flex">
+
+        <div class="collection-photos d-flex flex-column col-2 ">
+          <img src="./archeologue/small1.png" alt="" srcset="" class="mb-5">
+          <img src="./archeologue/small2.png" alt="" srcset="" class="mb-5">
+          <img src="./archeologue/small3.png" alt="" srcset="" class="mb-5">
+        </div>
+
+        <!-- ------------------------------CAROUSEEL PHOTOS -------------------------- -->
+            <div id="carouselExampleIndicators" class="carousel slide col-7 " data-bs-ride="carousel">
+
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./archeologue/a.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./archeologue/b.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./archeologue/c.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./archeologue/d.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./archeologue/e.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./archeologue/f.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./archeologue/g.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./archeologue/h.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./archeologue/i.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./archeologue/j.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+              <div class="description d-flex flex-column text-right">
+                <h2 class="titre-para">Archéologue</h2>
+                <h4 class="date">2021</h4>
+                <p>
+                  Les Archéologues est un spectacle que la compagnie Méliadès a créé en utilisant le chantier comme source d’inspiration. 
+                  Ce spectacle se déroule dans un lieu imaginaire qui permet une transition entre un passé et un devenir. 
+                  Représentation théâtrale sur le site de Champigny-sur-Marne en partenariat avec le 104 et la société du Grand Paris.
+  
+                </p>
+
+              </div>
+              
+            </div>
+      </div>
+    </div>
+
 </body>
 </html>

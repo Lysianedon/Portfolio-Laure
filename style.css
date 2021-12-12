@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .div-wrapper{
@@ -13,6 +14,7 @@ body{
   font-family: 'Montserrat', sans-serif !important;
   font-weight: 200;
   margin: 0px;
+
 }
 
 :root {
@@ -22,6 +24,21 @@ body{
 .gras {
   font-weight: bold;
 }
+
+P {
+  font-size: 1.1rem;
+}
+
+.motif-couleur{
+  width: 155%;
+}
+
+.date {
+  font-size: .9rem !important;
+  font-weight: normal;
+}
+
+
   /*------------------------------------ NAVBAR ------------------------------------ */
   .nav {
     height: 50px;
@@ -51,7 +68,7 @@ body{
   
   .nav > .nav-links {
     display: inline;
-    float: right;
+    float: right !important;
     font-size: 18px;
   }
   
@@ -132,6 +149,10 @@ body{
       color: white;
     }
   }
+
+  /* -------------------------CAROUSSEL PHOTOS ----------------------------- */
+
+  
   /*------------------------------------ PAGE D'ACCUEIL ------------------------------- */
 
   .section-1 {
@@ -177,6 +198,7 @@ body{
   .section-1 img {
     margin-left: 2%;
     margin-bottom: 6.5%;
+    height: 75vh;
   }
 
   .section-1 .mail {
@@ -190,7 +212,7 @@ body{
 
   .section-1 button {
    background-color: var(--vertcanard);
-   margin: 0 10% 9% 0; 
+   margin: 0 10% 12% 0; 
    background-color:#046e78;
    border-radius:6px;
    border:1px solid black;
@@ -204,7 +226,6 @@ body{
 
   .section-1 button:hover{
     border: 1px solid white;
-    color:var(--vertcanard);
     background-color: rgba(223, 215, 215, 0.753);
   }
 
@@ -270,9 +291,6 @@ body{
     padding-bottom: 5%;
   }
 
-  /* .section-3 .col-img {
-    width: fit-content;
-  } */
   .section-3 h2 {
     font-size:3.4rem;
   }
@@ -301,7 +319,7 @@ body{
     /* display: flex;
     flex-direction: column; */
     align-items:flex-end; 
-    padding-top:28%;
+    padding-top:21%;
     padding-right: 15%;
     width: 100%;
     line-height: 150%;
@@ -333,7 +351,12 @@ body{
   }
 
 
-  /*------------------------------------ SECTION 4 ------------------------------------ */
+  /*------------------------------------ SECTION 4 : BALADE FLUVIALE ------------------------------------ */
+
+  .section-4 {
+    height: 100vh;
+    margin-top: 8rem;
+  }
 
 .column-one{
   display: flex;
@@ -341,68 +364,83 @@ body{
   align-self: stretch;
   text-align: end;
   margin-right: 2%;
-  height: 100vh;
+
   /* margin-right: 10%; */
 }
 
-.column-one p {
-  font-size: 1.1rem;
-  padding-top: 7.5%;
+.section-4 .column-one p {
+  padding-top: 0%;
 }
 
-.titre-description{
-  padding-top: 28%;
+.section-4 .titre-description{
+  padding-top: 68%;
+  line-height: 150%;
+  text-align: end ;
+  width: 81%;
+  align-items:baseline;
   
 }
 
-.titre-para{
-  margin-bottom: 1%;
+.section-4 .titre-para{
+  margin-bottom: 0%;
   font-size: 2.3rem;
 }
 
-.date{
+.section-4 .date{
   margin-bottom: 5%;
+  padding-top: 0;
 }
 
-.motif-couleur{
-  width: 155%;
-}
 
-.column-three {
+
+.section-4 .column-three {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 8%;
+  padding-bottom: 7.8%;
 }
 
-.mescolonnes {
+.section-4 .mescolonnes {
   display: flex;
   justify-content: flex-end;
   padding-top: 5%;
 }
 
-.projets{
+.section-4 .projets{
   text-align: left;
   padding-left: 2%;
 }
 
-.projets,
-.theatre {
+.section-4 .projets,
+.section-4 .theatre {
   font-size: 3vw;
 }
 
-.big{
+.section-4 .big{
   max-height: 85%;
   width: auto;
 }
 
-/* .column-three img{
-  margin-bottom:5%;
-} */
 
-/* .wrapper-3{
-  padding-bottom: 6%;
-} */
+/* CAROUSSEL PHOTOS ------------------------------------------ */
 
+.section-5 {
+  /* width: 50%; */
+  margin-top: 12%;
+  height: 100vh;
+}
 
+.section-5 .collection-photos {
+  margin-right: 6%;
+  margin-left: 19%;
+}
 
+.section-5 .description {
+  text-align: end;
+  font-size: 1.1rem;
+  /* width: 100%; */
+}
+
+.section-5 .date {
+  margin-bottom: 2%;
+}
