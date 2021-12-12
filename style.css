@@ -167,7 +167,7 @@ P {
   .section-1 {
     display: flex;
     justify-content: space-between;
-    background: url('./accueil/img-accueil.png') right no-repeat;
+    background: url('./img/accueil/img-accueil.png') right no-repeat;
     /* background-position-y: 5%; */
     background-size:70%;
     height: 100vh;
