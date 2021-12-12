@@ -53,6 +53,15 @@ P {
   .nav > .nav-header {
     display: inline;
   }
+
+  .nav a {
+    text-decoration: none;
+    color: #046F78;
+  }
+
+  .nav .LM:hover {
+    font-weight: 600;
+  }
   
   /* -------------------- H1 NAVBAR -H1 NAVBAR------------ */
   .nav > .nav-header > .nav-title {
@@ -141,7 +150,7 @@ P {
       height: 0px;
     }
     .nav > #nav-check:checked ~ .nav-links {
-      height: calc(35vh - 50px);
+      height: calc(37vh - 50px);
       overflow-y: auto;
       display:flex;
       flex-direction:column;
@@ -441,6 +450,56 @@ P {
   /* width: 100%; */
 }
 
-.section-5 .date {
-  margin-bottom: 2%;
+.section-5 h2 {
+  font-size: 2.3rem;
 }
+
+.section-5 .date {
+  margin-bottom: 1%;
+}
+
+  /*------------------------------------ SECTION 6 : BALADE FLUVIALE ------------------------------------ */
+  .section-6 {
+    /* width: 50%; */
+    margin-top: 8%;
+    height: 90vh;
+  }
+
+
+  .section-6 .div-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-6 .mescolonnes {
+    display: flex;
+  }
+
+  .section-6 .colonne-droite {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .section-6 .titre-date,
+  .section-6 p {
+    text-align: end;
+    margin-bottom: 1%;
+  }
+
+  .section-6 .titre-date {
+    margin-bottom: 0%;
+  }
+
+  .section-6 p {
+    padding-left: 7%;
+    text-align: justify;
+  }
+
+
+
+  .section-6 .small {
+    width: 60%;
+    margin-left: 7%;
+    /* margin: auto; */
+  }
