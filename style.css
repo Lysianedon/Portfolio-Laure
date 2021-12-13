@@ -382,7 +382,7 @@ P {
 }
 
 .section-4 .titre-description{
-  padding-top: 68%;
+  padding-top: 38%;
   line-height: 150%;
   text-align: end ;
   width: 81%;
@@ -431,37 +431,41 @@ P {
 }
 
 
-/* CAROUSSEL PHOTOS ------------------------------------------ */
+/* SECTION 5 : (BOOTSTRAP HTML) -- CAROUSSEL PHOTOS ------------------------------------------ */
 
 .section-5 {
-  /* width: 50%; */
   margin-top: 12%;
+  margin-bottom: 10%;
   height: 100vh;
+}
+
+.section-5 .div-content {
+  margin-right: 8%;
 }
 
 .section-5 .collection-photos {
   margin-right: 6%;
-  margin-left: 19%;
+  margin-left: 10%;
 }
 
 .section-5 .description {
   text-align: end;
   font-size: 1.1rem;
-  /* width: 100%; */
 }
 
 .section-5 h2 {
   font-size: 2.3rem;
+  margin-top: 2%;
 }
 
 .section-5 .date {
   margin-bottom: 1%;
 }
 
-  /*------------------------------------ SECTION 6 : BALADE FLUVIALE ------------------------------------ */
+  /*------------------------------------ SECTION 6 : FESTIVAL DES VENDANGES ------------------------------------ */
   .section-6 {
     /* width: 50%; */
-    margin-top: 8%;
+    /* margin-top: 5%; */
     height: 90vh;
   }
 
@@ -473,6 +477,7 @@ P {
 
   .section-6 .mescolonnes {
     display: flex;
+
   }
 
   .section-6 .colonne-droite {
