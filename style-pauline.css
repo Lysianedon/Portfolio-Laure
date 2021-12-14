@@ -1,0 +1,271 @@
+
+/* !----------------- PARTIE PAULINE ------------------- */
+
+/* * GENERAL * */
+
+/* html {
+  font-size: 62.5%; 1rem = 10px 
+} */
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 200;
+  text-align: right;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+figcaption {
+  font-size: .9rem;
+}
+
+.gap-right {
+  margin-right: 5rem;
+  /* text-align: justify; */
+}
+
+.gap-bottom {
+  margin-bottom: 1.6rem;
+}
+
+/* SECTION VISITE-BOTANIQUE */
+
+.visite-botanique {
+  display: flex;
+  flex-direction: column;
+  /* height: 95vh; */
+  margin: 5rem;
+}
+
+.visite-botanique .title {
+  display: flex;
+  flex-direction: column;
+  margin: 1.6rem 0;
+  width: fit-content;
+}
+
+.visite-botanique .visite-content {
+  display: flex;
+  justify-content: center;
+}
+
+.visite-botanique .visite-content .left-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.visite-botanique .visite-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* SECTION PAUVRETE-RICHESSE */
+
+.pauvrete-richesse {
+  display: flex;
+  flex-direction: column;
+  /* height: 95vh; */
+  margin: 5rem;
+}
+
+.pauvrete-richesse .pauvre-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pauvrete-richesse .title {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 1.6rem;
+  width: fit-content;
+}
+
+.pauvrete-richesse .pauvre-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pauvrete-richesse p {
+  padding-right: 3rem;
+}
+
+/* SECTION CHEVALIER-VEGAN */
+
+.chevalier-vegan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5rem;
+}
+
+.cheval-top-content {
+  display: flex;
+}
+
+.cheval-top-content .top-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chevalier-vegan .margin-right {
+  margin-right: 1rem;
+}
+
+.cheval-descript h4 {
+  margin-bottom: 2rem;
+}
+
+.cheval-bottom-content {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* SECTION MIEL-CANTIQUE */
+
+.miel-cantique {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 5rem;
+}
+
+.miel-title {
+  width: fit-content;
+  margin-bottom: 1.6rem;
+  padding: 0 .5rem;
+}
+
+.miel-video {
+  display: flex;
+  gap: 2rem;
+}
+
+.miel-video iframe {
+  width: 100%;
+}
+
+.miel-descript {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 0 .5rem;
+}
+
+.miel-carousel {
+  align-self: center;
+  
+}
+
+.miel-descript p {
+  margin-top: 1.6rem;
+}
+
+/* SECTION JEU-AMOUR */
+
+.jeu-amour {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem;
+}
+
+.jeu-title {
+  width: fit-content;
+  margin-bottom: 1.6rem;
+  padding: 0 .5rem;
+}
+
+.jeu-video {
+  display: flex;
+  gap: 2rem;
+}
+
+.jeu-video iframe {
+  width: 100%;
+}
+
+.jeu-descript {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 0 .5rem;
+}
+
+.jeu-carousel {
+  align-self: center;
+  
+}
+
+.jeu-descript p {
+  margin-top: 1.6rem;
+}
+
+/* * FOOTER * */
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer h2 {
+  font-size: 3.2rem;
+}
+
+footer .motif-couleur {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+footer .header {
+  width: 50vw;
+  margin-bottom: 3rem;
+}
+
+footer .contact {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.footer-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.footer-btn .btn {
+  margin: 0 1rem;
+  height: 3rem;
+  padding: 0 3rem;
+  border-radius: 6px;
+  border: 1px solid white;
+  background-color: var(--vertcanard);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
