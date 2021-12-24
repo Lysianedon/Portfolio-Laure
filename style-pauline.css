@@ -3,9 +3,10 @@
 
 /* * GENERAL * */
 
-/* html {
-  font-size: 62.5%; 1rem = 10px 
-} */
+
+:root {
+  --vertcanard : #046F78;
+}
 
 h3 {
   font-size: 2rem;
@@ -36,6 +37,15 @@ figcaption {
 
 .gap-bottom {
   margin-bottom: 1.6rem;
+}
+
+.section-7-mobile,
+.section-8-mobile,
+.section-9-mobile,
+.section-10-mobile,
+.section-11-mobile,
+.section-12-mobile {
+  display: none;
 }
 
 /* SECTION VISITE-BOTANIQUE */
@@ -216,6 +226,11 @@ figcaption {
   margin-top: 1.6rem;
 }
 
+.img-jeu-amour {
+  display: none;
+}
+
+
 /* * FOOTER * */
 
 footer {
@@ -249,6 +264,10 @@ footer a {
   text-decoration: none;
 }
 
+.footer-desktop .linkedin {
+  line-height: 100%;
+}
+
 .footer-btn {
   width: 100%;
   display: flex;
@@ -259,7 +278,7 @@ footer a {
 .footer-btn .btn {
   margin: 0 1rem;
   height: 3rem;
-  padding: 0 3rem;
+  padding: 1rem 3rem 4rem 3rem;
   border-radius: 6px;
   border: 1px solid white;
   background-color: var(--vertcanard);
@@ -267,5 +286,153 @@ footer a {
   font-size: 1.1rem;
   font-weight: 700;
   cursor: pointer;
+}
+
+/* RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE */
+
+@media(max-width:1100px) {
+  
+  
+  .video-desktop {
+    display: none;
+  }
+
+
+  /* CHEVALIER VEGAN ------------- */
+
+  .section-9-mobile .div-content{
+    margin-bottom: 0vh !important;
+  }
+
+  .section-9-mobile .header img{
+    width: 100%;
+  }
+
+  .section-9-mobile .theatre {
+    text-align: right;
+  }
+
+  .section-9-mobile .header{
+    margin-bottom: 15vh;
+  }
+
+  .section-9-mobile .date {
+    margin-left: 0;
+  }
+
+  /* MIEL CANTIQUE --------------- */
+  .section-10-mobile p {
+    margin-bottom: 0;
+  }
+
+  .section-10-mobile .date {
+    margin-left: 0;
+  }
+
+  /* FOOTER ---------------------- */
+  .section-12-mobile {
+    height: auto;
+    
+  }
+  .section-12-mobile .div-content{
+    width: 100%;
+    margin: 7vh auto 0 auto;
+  }
+
+  footer .motif-couleur {
+    width: 250%;
+    overflow-x: visible;
+  }
+
+  .footer-mobile .mail-num {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 0 5vh 0;
+  }
+
+  .footer-mobile .mail-num a {
+    text-decoration: none;
+    color: black;
+    margin-top: 3vh;
+  }
+
+  .footer-mobile .mail-num a :hover {
+    color: var(--vertcanard);
+  }
+  .footer-mobile h3 {
+    font-size: 6vw;
+  }
+
+  .footer-desktop {
+    display: none;
+  }
+
+  .motif-couleur {
+    width: 75%;
+    height: 15vh;
+}
+
+.footer-mobile .btn {
+  margin-right: 1vw;
+  padding: 0vw 0 0vw 0;
+}
+
+.footer-mobile a {
+  margin: 2vw 1vw 3vw 0vw;
+}
+
+footer p {
+  width: fit-content;
+  text-align: center !important;
+}
+
+footer p a {
+  font-size: clamp(19px, 1.1rem, 1.5rem) !important;
+}
+
+
+}
+
+/* --------------- MEDIA QUERIES : 376PX ----------------- */
+
+@media (max-width:600px) {
+
+  .footer-mobile a {
+    font-size: clamp(75%, 7vw, 8vw);
+  }
+
+  .footer-mobile .footer-btn {
+    flex-direction: column;
+  }
+
+  .footer-mobile .footer-btn button {
+    margin-bottom: 2vh !important;
+    width: 42%;
+    padding: auto;
+    margin: auto;
+    height: auto;
+    padding-bottom: 3%;
+  }
+
+  .footer-mobile .footer-btn:hover{
+    border: 1px solid white;
+    background-color: rgba(223, 215, 215, 0.753);
+  }
+
+  .footer-mobile .footer-btn a:hover{
+    color:var(--vertcanard);
+  }
+}
+
+@media (max-width:340px) {
+  .display-none {
+    display: none;
+  }
+
+  .display-initial {
+    display:initial;
+  }
 }
 

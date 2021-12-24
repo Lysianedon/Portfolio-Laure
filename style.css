@@ -1,514 +1,739 @@
 /* -----------------------------PARAMETRES GÉNÉRAUX ---------------------------------*/
 *, ::before, ::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.display-initial {
+display:none;
 }
 
 .div-wrapper{
-    padding: 0 3% 0 2%;
+  padding: 0 3% 0 2%;
 }
 
 body{
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 200;
-  margin: 0px;
+font-family: 'Montserrat', sans-serif !important;
+font-weight: 200;
+margin: 0px;
 
 }
 
 :root {
-  --vertcanard : #046F78;
+--vertcanard : #046F78;
 }
 
 .gras {
-  font-weight: bold;
+font-weight: bold;
 }
 
 P {
-  font-size: 1.1rem;
+font-size: 1.1rem;
 }
 
 .motif-couleur{
-  width: 155%;
+width: 155%;
 }
 
 .date {
-  font-size: .9rem !important;
-  font-weight: normal;
+font-size: .9rem;
+font-weight: normal;
 }
 
 
-  /*------------------------------------ NAVBAR ------------------------------------ */
-  .nav {
-    height: 50px;
-    width: 100%;
-    background-color: white;
-    position: fixed;
-    padding-right: 2%;
-    z-index: 10;
-    /* margin-bottom: 5%; */
-  }
-  
-  .nav > .nav-header {
-    display: inline;
-  }
+/*------------------------------------ NAVBAR ------------------------------------ */
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  padding-right: 2%;
+  z-index: 10;
+  /* margin-bottom: 5%; */
+}
 
-  .nav a {
-    text-decoration: none;
-    color: #046F78;
-  }
+.nav > .nav-header {
+  display: inline;
+}
 
-  .nav .LM:hover {
-    font-weight: 600;
-  }
-  
-  /* -------------------- H1 NAVBAR -H1 NAVBAR------------ */
-  .nav > .nav-header > .nav-title {
-    display: inline-block;
-    font-size: 22px;
-    color: #046F78;
-    padding: 10px 10px 10px 10px;
-  }
-  
+.nav a {
+  text-decoration: none;
+  color: #046F78;
+}
+
+.nav .LM:hover {
+  font-weight: 600;
+}
+
+/* -------------------- H1 NAVBAR -H1 NAVBAR------------ */
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #046F78;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right !important;
+  font-size: 18px;
+}
+
+/* --------------------MES LIENS NAV -------------------- */
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav .nav-links:nth-child(1){
+  font-weight: bold;
+}
+
+.nav > .nav-links > a:hover {
+
+  text-decoration: underline var(--vertcanard) 7px;
+  font-weight: bold;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:1000px) {
   .nav > .nav-btn {
-    display: none;
-  }
-  
-  .nav > .nav-links {
-    display: inline;
-    float: right !important;
-    font-size: 18px;
-  }
-  
-  /* --------------------MES LIENS NAV -------------------- */
-  .nav > .nav-links > a {
     display: inline-block;
-    padding: 13px 10px 13px 10px;
-    text-decoration: none;
-    color: black;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: white;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid teal;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
   }
 
-  .nav .nav-links:nth-child(1){
-    font-weight: bold;
-  }
-  
-  .nav > .nav-links > a:hover {
-
-    text-decoration: underline var(--vertcanard) 7px;
-    font-weight: bold;
-  }
-  
-  .nav > #nav-check {
-    display: none;
-  }
-  
-  @media (max-width:600px) {
-    .nav > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-    }
-    .nav > .nav-btn > label {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      padding: 13px;
-    }
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: white;
-    }
-    .nav > .nav-btn > label > span {
-      display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid teal;
-    }
-    .nav > .nav-links {
-      position: absolute;
-      display: block;
-      width: 100%;
-      background-color: #333;
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 50px;
-      left: 0px;  
-    }
-
-    /* --------------MENU BURGER  - LIENS NAV  -----------------------------*/
-    .nav > .nav-links > a {
-      display: block;
-      width: 100%;
-      color: white;
-    }
-    .nav > .nav-links > a:hover {
-        background-color: rgb(4, 112, 112);
-    }
-    .nav > #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
-    }
-    .nav > #nav-check:checked ~ .nav-links {
-      height: calc(37vh - 50px);
-      overflow-y: auto;
-      display:flex;
-      flex-direction:column;
-      background-color: teal;
-      color: white;
-    }
-  }
-
-  /* -------------------------CAROUSSEL PHOTOS ----------------------------- */
-
-  
-  /*------------------------------------ PAGE D'ACCUEIL ------------------------------- */
-
-  .section-1 {
-    display: flex;
-    justify-content: space-between;
-    background: url('./img/accueil/img-accueil.png') right no-repeat;
-    /* background-position-y: 5%; */
-    background-size:70%;
-    height: 100vh;
-    align-items: flex-end;
-    margin-bottom: 7%;
-  }
-
-  .presentation-accueil {
-    display: flex;
-    align-items: flex-end;
-  }
-
-  .boutons-contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .section-1 h1 {
-    font-size: 5vw;
-    line-height: 200%;
-    margin-bottom: 10%;
-  }
-
-  .section-1 h2 {
-    line-height: 200%;
-    color: #046F78;
-    font-size: 1.8rem;
-    /* margin-bottom: 3%; */
-  }
-
-  .texte-accueil {
-    margin-left: 6%;
-    margin-bottom: 1%;
-  }
-
-  .section-1 img {
-    margin-left: 2%;
-    margin-bottom: 6.5%;
-    height: 75vh;
-  }
-
-  .section-1 .mail {
-    margin-bottom: 5%;
-  }
-
-  .section-1 a {
-    text-decoration: none;
+  /* --------------MENU BURGER  - LIENS NAV  -----------------------------*/
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
     color: white;
   }
-
-  .section-1 button {
-   background-color: var(--vertcanard);
-   margin: 0 10% 12% 0; 
-   background-color:#046e78;
-   border-radius:6px;
-   border:1px solid black;
-   cursor:pointer;
-   color:#ffffff;
-   font-size:1rem;
-   font-weight:bold;
-   padding:3% 10%;
-   text-decoration:none;
+  .nav > .nav-links > a:hover {
+      background-color: rgb(4, 112, 112);
   }
-
-  .section-1 button:hover{
-    border: 1px solid white;
-    background-color: rgba(223, 215, 215, 0.753);
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
   }
-
-  .section-1 button a:hover{
-    color:var(--vertcanard);
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(37vh - 50px);
+    overflow-y: auto;
+    display:flex;
+    flex-direction:column;
+    background-color: teal;
+    color: white;
   }
+}
 
-  .section-1 .boutons-contacts {
-    margin-bottom: 4%;
-  }
-
-  .boutons-contacts .btn-linkedin {
-    padding:7% 26%;
-  }
-
-  /*-------------------------SECTION 2 : PRESENTATION ------------------------------------ */
-  .section-2 {
-    height: 100vh;
-  }
+/* -------------------------CAROUSSEL PHOTOS ----------------------------- */
 
 
-  .content-section2{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 4%;
-    padding-top: 5%;
+/*------------------------------------ PAGE D'ACCUEIL ------------------------------- */
 
-  }
+.section-1 {
+  display: flex;
+  justify-content: space-between;
+  background: url('./img/accueil/img-accueil.png') right no-repeat;
+  /* background-position-y: 5%; */
+  background-size:70%;
+  height: 100vh;
+  align-items: flex-end;
+  margin-bottom: 7%;
+}
 
-  .content-section2 p {
-    width: 43%;
-    padding: 0 7% O 0%;
-    line-height: 200%;
-    font-size: 1rem;
-    text-align: justify;
-  }
+.presentation-accueil {
+  display: flex;
+  align-items: flex-end;
+}
 
-  .content-section2 .bande-couleur {
-    position: absolute;
-    right: 12%;
-    height: 82vh;
-    width: 9%;
-    z-index: 1;
-
-  }
-
-  .content-section2 .photo-laure {
-    width: auto;
-    max-height:60%;
-    position: absolute;
-    right: 17%;
-    /* right:15%; */
-    height: 82vh;
-    z-index: 2;
-  }
-
-  /*------------------------------------ SECTION 3 : OEXMELIN ------------------------------------ */
-
-  .section-3 {
-    display: flex;
-    height: 100vh;
-    padding-bottom: 5%;
-  }
-
-  .section-3 h2 {
-    font-size:3.4rem;
-  }
-  .section-3 .col-texte {
-    display: flex;
-    flex-direction: column;
-    align-items:flex-end;
-  }
-  
-  .section-3 .projets{
-    padding:0 0 4% 0;
-  }
-
-  .section-3 .theatre{
-    text-align: end;
-    padding:4% 4% 4% 0;
-  }
-
-  .section-3 .collection-photos {
-    display: flex;
-    justify-content:end;
-    margin-top: 3%;
-  }
-
-  .section-3 .description {
-    /* display: flex;
-    flex-direction: column; */
-    align-items:flex-end; 
-    padding-top:21%;
-    padding-right: 15%;
-    width: 100%;
-    line-height: 150%;
-    text-align: justify;
-
-  }
-
-  .section-3 .description h3 {
-    font-size: 2rem;
-  }
-
-  .section-3 .description .titre-date {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  .section-3 .bigpicture {
-    max-width: 100%; 
-    width: 175%;
-  }
-
-
-  .section-3 .col-img {
-    max-width: 90%;
-  }
-
-  .section-3 .smallpictures {
-    margin-left: .6%;
-  }
-
-
-  /*------------------------------------ SECTION 4 : BALADE FLUVIALE ------------------------------------ */
-
-  .section-4 {
-    height: 100vh;
-    margin-top: 8rem;
-  }
-
-.column-one{
+.boutons-contacts {
   display: flex;
   flex-direction: column;
-  align-self: stretch;
-  text-align: end;
-  margin-right: 2%;
+  align-items: flex-end;
+}
 
-  /* margin-right: 10%; */
+.section-1 h1 {
+  font-size: 5vw;
+  line-height: 200%;
+  margin-bottom: 10%;
+}
+
+.section-1 h2 {
+  line-height: 200%;
+  color: #046F78;
+  font-size: 1.8rem;
+  /* margin-bottom: 3%; */
+}
+
+.texte-accueil {
+  margin-left: 6%;
+  margin-bottom: 1%;
+}
+
+.section-1 img {
+  margin-left: 2%;
+  margin-bottom: 6.5%;
+  height: 75vh;
+}
+
+.section-1 .mail {
+  margin-bottom: 5%;
+}
+
+.section-1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.section-1 button {
+ background-color: var(--vertcanard);
+ margin: 0 10% 12% 0;
+ background-color:#046e78;
+ border-radius:6px;
+ border:1px solid black;
+ cursor:pointer;
+ color:#ffffff;
+ font-size:1rem;
+ font-weight:bold;
+ padding:3% 10%;
+ text-decoration:none;
+}
+
+.section-1 button:hover{
+  border: 1px solid white;
+  background-color: rgba(223, 215, 215, 0.753);
+}
+
+.section-1 button a:hover{
+  color:var(--vertcanard);
+}
+
+.section-1 .boutons-contacts {
+  margin-bottom: 4%;
+}
+
+.boutons-contacts .btn-linkedin {
+  padding:7% 26%;
+}
+
+/*-------------------------SECTION 2 : PRESENTATION ------------------------------------ */
+.section-2 {
+  height: 100vh;
+}
+
+
+.content-section2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 4%;
+  padding-top: 5%;
+
+}
+
+.content-section2 p {
+  width: 43%;
+  padding: 0 7% O 0%;
+  line-height: 200%;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.content-section2 .bande-couleur {
+  position: absolute;
+  right: 12%;
+  height: 82vh;
+  width: 9%;
+  z-index: 1;
+
+}
+
+.content-section2 .photo-laure {
+  width: auto;
+  max-height:60%;
+  position: absolute;
+  right: 17%;
+  /* right:15%; */
+  height: 82vh;
+  z-index: 2;
+}
+
+.content-section2 .boutons-mobile {
+  display: none;
+}
+
+
+/*------------------------------------ SECTION 3 : OEXMELIN ------------------------------------ */
+
+.section-3 {
+  display: flex;
+  height: 100vh;
+  padding-bottom: 5%;
+}
+
+.section-3 h2 {
+  font-size:3.4rem;
+}
+.section-3 .col-texte {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+}
+
+.section-3 .projets{
+  padding:0 0 4% 0;
+}
+
+.section-3 .theatre{
+  text-align: end;
+  padding:4% 4% 4% 0;
+}
+
+.section-3 .collection-photos {
+  display: flex;
+  justify-content:end;
+  margin-top: 3%;
+}
+
+.section-3 .description {
+  /* display: flex;
+  flex-direction: column; */
+  align-items:flex-end;
+  padding-top:21%;
+  padding-right: 15%;
+  width: 100%;
+  line-height: 150%;
+  text-align: justify;
+
+}
+
+.col-img .credits {
+  text-align:right;
+  font-size: 1rem;
+}
+
+.section-3 .description h3 {
+  font-size: 2rem;
+}
+
+.section-3 .description .titre-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.section-3 .bigpicture {
+  max-width: 100%;
+  width: 175%;
+}
+
+
+.section-3 .col-img {
+  max-width: 90%;
+}
+
+.section-3 .smallpictures {
+  margin-left: .6%;
+}
+
+.section-3-mobile {
+    display: none;
+}
+
+
+/*------------------------------------ SECTION 4 : BALADE FLUVIALE ------------------------------------ */
+
+.section-4-mobile {
+  display: none;
+}
+
+.section-4 {
+  height: 100vh;
+  margin-top: 8rem;
+}
+
+.column-one{
+display: flex;
+flex-direction: column;
+align-self: stretch;
+text-align: end;
+margin-right: 2%;
 }
 
 .section-4 .column-one p {
-  padding-top: 0%;
+padding-top: 0%;
 }
 
 .section-4 .titre-description{
-  padding-top: 38%;
-  line-height: 150%;
-  text-align: end ;
-  width: 81%;
-  align-items:baseline;
-  
+padding-top: 38%;
+line-height: 150%;
+text-align: end ;
+width: 81%;
+align-items:baseline;
 }
 
 .section-4 .titre-para{
-  margin-bottom: 0%;
-  font-size: 2.3rem;
+margin-bottom: 0%;
+font-size: 2.3rem;
 }
 
 .section-4 .date{
-  margin-bottom: 5%;
-  padding-top: 0;
+margin-bottom: 5%;
+padding-top: 0;
 }
 
-
-
 .section-4 .column-three {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 7.8%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding-bottom: 7.8%;
 }
 
 .section-4 .mescolonnes {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 5%;
+display: flex;
+justify-content: flex-end;
+padding-top: 5%;
 }
 
 .section-4 .projets{
-  text-align: left;
-  padding-left: 2%;
+text-align: left;
+padding-left: 2%;
 }
 
 .section-4 .projets,
 .section-4 .theatre {
-  font-size: 3vw;
+font-size: 3vw;
 }
 
 .section-4 .big{
-  max-height: 85%;
-  width: auto;
+max-height: 85%;
+width: auto;
 }
 
+.section-4 .credits {
+text-align: end;
+margin-top: -12Vh;
+}
 
 /* SECTION 5 : (BOOTSTRAP HTML) -- CAROUSSEL PHOTOS ------------------------------------------ */
 
+.section-5-mobile {
+display: none;
+}
+
 .section-5 {
-  margin-top: 12%;
-  margin-bottom: 10%;
-  height: 100vh;
+margin-top: 12%;
+margin-bottom: 10%;
+height: 100vh;
 }
 
 .section-5 .div-content {
-  margin-right: 8%;
+margin-right: 8%;
 }
 
 .section-5 .collection-photos {
-  margin-right: 6%;
-  margin-left: 10%;
+margin-right: 6%;
+margin-left: 10%;
 }
 
 .section-5 .description {
-  text-align: end;
-  font-size: 1.1rem;
+text-align: end;
+font-size: 1.1rem;
 }
 
 .section-5 h2 {
-  font-size: 2.3rem;
-  margin-top: 2%;
+font-size: 2.3rem;
+margin-top: 2%;
 }
 
 .section-5 .date {
+margin-bottom: 1%;
+}
+
+/*------------------------------------ SECTION 6 : FESTIVAL DES VENDANGES ------------------------------------ */
+
+.section-6-mobile {
+  display: none;
+  }
+
+.section-6 {
+  height: 90vh;
+}
+
+
+.section-6 .div-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-6 .mescolonnes {
+  display: flex;
+
+}
+
+.section-6 .colonne-droite {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.section-6 .titre-date,
+.section-6 p {
+  text-align: end;
   margin-bottom: 1%;
 }
 
-  /*------------------------------------ SECTION 6 : FESTIVAL DES VENDANGES ------------------------------------ */
-  .section-6 {
-    /* width: 50%; */
-    /* margin-top: 5%; */
-    height: 90vh;
+.section-6 .titre-date {
+  margin-bottom: 0%;
+}
+
+.section-6 p {
+  padding-left: 7%;
+  text-align: justify;
+}
+
+.section-6 .small {
+  width: 60%;
+  margin-left: 7%;
+  /* margin: auto; */
+}
+
+.deux {
+  width: 30%;
+}
+
+/* RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE */
+
+@media(max-width:1111px) {
+
+  /* PARAMETRES GENERAUX ------------ */
+
+
+  .section-3,
+  .section-4,
+  .section-5,
+  .section-6,
+  .chevalier-vegan,
+  .miel-cantique,
+  .jeu-amour,
+  .visite-botanique,
+  .pauvrete-richesse{
+      display: none !important;
   }
 
+   .section-3-mobile,
+   .section-4-mobile,
+   .section-5-mobile,
+   .section-6-mobile,
+   .section-7-mobile,
+   .section-8-mobile,
+   .section-9-mobile,
+   .section-10-mobile,
+   .section-11-mobile,
+   .section-12-mobile {
+   display: initial !important;
+   }
 
-  .section-6 .div-content {
+   *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow-x:hidden;
+   }
+
+   .mobile .div-content{
     display: flex;
+    width: 95%;
+    margin: 0 auto;
     flex-direction: column;
+    justify-content: center !important;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+}
+
+   .div-content h3 {
+    font-size: clamp(35px, 5vw, 6vw) !important;
   }
 
-  .section-6 .mescolonnes {
-    display: flex;
-
-  }
-
-  .section-6 .colonne-droite {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-
-  .section-6 .titre-date,
-  .section-6 p {
-    text-align: end;
-    margin-bottom: 1%;
-  }
-
-  .section-6 .titre-date {
-    margin-bottom: 0%;
-  }
-
-  .section-6 p {
-    padding-left: 7%;
+  .div-content p {
+    font-size: clamp(19px, 1.1rem, 1.5rem) !important;
+    width: 100%;
     text-align: justify;
+    padding: 0 4vw 5vh 2vw;
+  }
+
+  .mobile .p2 {
+    padding-top: 6vh;
+  }
+
+  .div-content .date {
+    font-size: clamp(15px, 1rem, 1.5rem) !important;
+    width: 100%;
+    text-align: center;
+  }
+
+  .div-content h2 {
+    font-size: clamp(42px, 6vw, 7vw) !important;
+  }
+
+  .mobile .carousel {
+    margin: 0;
+  }
+
+  .mobile .titre-date {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+   /* SECTION 1 : PAGE D'ACCUEIL ------- */
+
+    #accueil h1 {
+        margin-bottom: 30vh;
+    }
+
+    #accueil .mail {
+      margin-bottom: 7vh;
+    }
+
+   /* --------SECTION 2 : PRESENTATION -------------- */
+
+  .section-2 {
+      height: auto;
+  }
+  .content-section2 {
+      display: flex;
+      flex-direction: column-reverse;
+      padding-top: 0;
+  }
+
+  .content-section2 .photo-laure {
+      position: static;
+      width: auto;
+      height: 52vh;
+      margin-bottom: 5%;
+  }
+
+  .content-section2 .bande-couleur {
+     display: none;
+  }
+
+  .content-section2 p {
+      width: 70%;
+      padding-bottom: 5%;
+    }
+
+    .content-section2 .boutons-mobile {
+        display: initial;
+        display: flex;
+    }
+
+    .section-2 button {
+      background-color: var(--vertcanard);
+      /* margin-right: 15%;  */
+      border-radius:6px;
+      border:1px solid black;
+      cursor:pointer;
+      padding: 2% 1% 2% 1%;
+      text-decoration:none;
+      width: 100%;
+      font-weight: 600;
+     }
+
+     .section-2 .btn-linkedin {
+       margin-right: 10%;
+     }
+
+     .section-2 a {
+         text-decoration: none;
+         color:#ffffff;
+     }
+
+     /* SECTION 3 : OEXMELIN ---------------- */
+
+      .section-3-mobile .bande-couleur {
+          width: 30%;
+      }
+
+      .section-3-mobile .header {
+        margin-bottom: 30%;
+      }
+
+     .section-3-mobile .theatre {
+         text-align: right;
+     }
+
+     .section-3-mobile .motif-couleur {
+         width: 100vw;
+     }
+
+     /* -------- SECTION 4 : BALADE FLUVIALE --------- */
+
+     .section-4-mobile .div-content,
+     .section-5-mobile .div-content {
+      margin-bottom: 6vh;
+     }
+     .section-4-mobile .date {
+         font-size: 1.5rem;
+         margin-bottom: 5%;
+     }
+
+     /* -------- SECTION 5 : ARCHEOLOGUE --------- */
+
+
+     /* -------- SECTION 6 : FESTIVAL DES VENDANGES --------- */
+
+
+}
+
+@media (max-width: 370px) {
+
+  .content-section2 .boutons-mobile {
+    flex-direction: column;
+    margin-top: 5%;
+  }
+
+  .content-section2 .btn-linkedin {
+    margin-bottom: 15%;
+    padding: 8%;
   }
 
 
-
-  .section-6 .small {
-    width: 60%;
-    margin-left: 7%;
-    /* margin: auto; */
-  }
-
-  .deux {
-    width: 30%;
-  }
+}
