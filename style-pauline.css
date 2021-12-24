@@ -53,7 +53,7 @@ figcaption {
 .visite-botanique {
   display: flex;
   flex-direction: column;
-  /* height: 95vh; */
+  height: 95vh;
   margin: 5rem;
 }
 
@@ -86,8 +86,8 @@ figcaption {
 .pauvrete-richesse {
   display: flex;
   flex-direction: column;
-  /* height: 95vh; */
   margin: 5rem;
+  margin-bottom: 30vh;
 }
 
 .pauvrete-richesse .pauvre-content {
@@ -121,7 +121,13 @@ figcaption {
   flex-direction: column;
   justify-content: center;
   margin: 5rem;
+  margin-bottom: 25vh;
 }
+
+#courts-metrages h2 {
+  font-size: clamp(42px, 4vw, 7vw) !important;
+}
+
 
 .cheval-top-content {
   display: flex;
@@ -154,6 +160,7 @@ figcaption {
   flex-direction: column;
   align-items: flex-end;
   margin: 5rem;
+  height: 95vh;
 }
 
 .miel-title {
@@ -193,6 +200,8 @@ figcaption {
   display: flex;
   flex-direction: column;
   margin: 5rem;
+  /* margin-bottom: 0; */
+  height: 100vh;
 }
 
 .jeu-title {
@@ -236,6 +245,7 @@ figcaption {
 footer {
   display: flex;
   flex-direction: column;
+  height: 92vh;
 }
 
 footer h2 {
@@ -265,7 +275,7 @@ footer a {
 }
 
 .footer-desktop .linkedin {
-  line-height: 100%;
+  line-height: 270%;
 }
 
 .footer-btn {
@@ -320,6 +330,8 @@ footer a {
     margin-left: 0;
   }
 
+
+
   /* MIEL CANTIQUE --------------- */
   .section-10-mobile p {
     margin-bottom: 0;
@@ -333,6 +345,10 @@ footer a {
   .section-12-mobile {
     height: auto;
     
+  }
+
+  footer {
+    height: auto;
   }
   .section-12-mobile .div-content{
     width: 100%;
