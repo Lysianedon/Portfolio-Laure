@@ -296,6 +296,26 @@ footer a {
   font-size: 1.1rem;
   font-weight: 700;
   cursor: pointer;
+  transition: ease-in 250ms;
+}
+
+.footer-btn .btn:hover{
+  border: 1px solid var(--vertcanard);
+  color: #046F78;
+  transform: scale(1);
+  background-color: white;
+}
+
+.footer-btn a {
+  color: #046F78;
+}
+
+.footer-desktop .contact a {
+  transition: ease-in 250ms;
+}
+
+.footer-desktop h3:hover {
+  color: #046F78;
 }
 
 /* RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE */
@@ -374,9 +394,6 @@ footer a {
     margin-top: 3vh;
   }
 
-  .footer-mobile .mail-num a :hover {
-    color: var(--vertcanard);
-  }
   .footer-mobile h3 {
     font-size: 6vw;
   }
@@ -390,13 +407,22 @@ footer a {
     height: 15vh;
 }
 
-.footer-mobile .btn {
-  margin-right: 1vw;
-  padding: 0vw 0 0vw 0;
+.footer-btn .btn {
+  padding: 0 15px;
+  transition: ease-in 250ms;
 }
 
-.footer-mobile a {
-  margin: 2vw 1vw 3vw 0vw;
+
+.footer-btn a {
+  color: #046F78;
+}
+
+.footer-mobile .mail-num a {
+  transition: ease-in 250ms;
+}
+
+.footer-mobile .mail-num a:hover {
+  color: #046F78;
 }
 
 footer p {
@@ -432,14 +458,10 @@ footer p a {
     padding-bottom: 3%;
   }
 
-  .footer-mobile .footer-btn:hover{
-    border: 1px solid white;
-    background-color: rgba(223, 215, 215, 0.753);
-  }
-
   .footer-mobile .footer-btn a:hover{
     color:var(--vertcanard);
   }
+  
 }
 
 @media (max-width:340px) {

@@ -42,6 +42,10 @@ font-size: .9rem;
 font-weight: normal;
 }
 
+.credits {
+  font-size: 13.3px !important;
+}
+
 
 /*------------------------------------ NAVBAR ------------------------------------ */
 .nav {
@@ -223,6 +227,18 @@ font-weight: normal;
   color: white;
 }
 
+.section-1 .lien-mail,
+.section-1 .lien-num {
+  color: var(--vertcanard);
+  transition: ease-in 250ms;
+}
+
+
+.section-1 .lien-mail:hover,
+.section-1 .lien-num:hover {
+  color: black;
+}
+
 .section-1 button {
  background-color: var(--vertcanard);
  margin: 0 10% 12% 0;
@@ -347,7 +363,6 @@ font-weight: normal;
 
 .col-img .credits {
   text-align:right;
-  font-size: 1rem;
 }
 
 .section-3 .description h3 {
@@ -449,7 +464,8 @@ width: auto;
 
 .section-4 .credits {
 text-align: end;
-margin-top: -12Vh;
+margin-top: -15Vh;
+font-size: 13.3px;
 }
 
 /* SECTION 5 : (BOOTSTRAP HTML) -- CAROUSSEL PHOTOS ------------------------------------------ */
@@ -540,7 +556,7 @@ margin-bottom: 1%;
 
 /* RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE */
 
-@media(max-width:1111px) {
+@media(max-width:1110px) {
 
   /* PARAMETRES GENERAUX ------------ */
 
@@ -620,6 +636,10 @@ margin-bottom: 1%;
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+
+  .credits {
+    font-size: 13.3px !important;
   }
 
    /* SECTION 1 : PAGE D'ACCUEIL ------- */
