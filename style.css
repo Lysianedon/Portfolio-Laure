@@ -46,6 +46,12 @@ font-weight: normal;
   font-size: 13.3px !important;
 }
 
+.justify {
+  text-align: justify;
+}
+
+
+
 
 /*------------------------------------ NAVBAR ------------------------------------ */
 .nav {
@@ -55,7 +61,7 @@ font-weight: normal;
   position: fixed;
   padding-right: 2%;
   z-index: 10;
-  /* margin-bottom: 5%; */
+  overflow-x:visible;
 }
 
 .nav > .nav-header {
@@ -665,8 +671,10 @@ margin-bottom: 1%;
 
   .content-section2 .photo-laure {
       position: static;
-      width: auto;
-      height: 52vh;
+      /* width: auto;
+      height: 52vh; */
+      width: 40%;
+      height: auto;
       margin-bottom: 5%;
   }
 
@@ -734,11 +742,46 @@ margin-bottom: 1%;
          margin-bottom: 5%;
      }
 
-     /* -------- SECTION 5 : ARCHEOLOGUE --------- */
+}
+
+/* ACCUEIL VERSION MOBILE ------------------ */
+
+@media (max-width: 766px) {
+
+  .section-1 h2,
+  .section-1 button {
+    display: none;
+  }
+
+  .section-1 {
+    background: url('./img/accueil/img-accueil.png')cover no-repeat;
+    background-size:160%;
+    height: auto;
+    background-blend-mode: overlay;
+    background-position-y: 12vh;
+    background-position-x: 0;
+    align-items: flex-end;
+    margin-bottom: 17%;
+  }
+
+  .section-1 h1 {
+    padding-bottom: 50%;
+    line-height: 200%;
+    padding-top: 0vh;
+    font-size: clamp(3vw, 7.5vw, 15vw);
+  }
+
+  .section-1 img {
+    /* display: none; */
+    height: 10%;
+    width: 35%;
+    max-height: 10%;
+  }
 
 
-     /* -------- SECTION 6 : FESTIVAL DES VENDANGES --------- */
+}
 
+@media (max-width:625px) {
 
 }
 
@@ -754,5 +797,44 @@ margin-bottom: 1%;
     padding: 8%;
   }
 
+
+}
+/* ---- IPHONE 7/8/8PLUS ------------------ */
+@media (max-width: 477px) {
+  
+  .section-1 {
+    background-position-x: -15%;
+  }
+  .section-1 h1 {
+    padding-bottom: 20%;
+    padding-top: 0vh;
+  }
+
+  .section-1 img {
+    width: 41%;
+  }
+}
+
+/* ---- IPHONE 6/7/8 ------------------ */
+@media (max-width: 375px) {
+  
+  .section-1 {
+    background-position-x: -15%;
+  }
+  .section-1 h1 {
+    padding-bottom: 8%;  
+  }
+
+  .section-1 img {
+    width: 41%;
+  }
+}
+
+/* ---- GALAXY S5 ------------------ */
+@media (max-width: 360px) {
+  
+  .section-1 h1 {
+    padding-bottom: 28%;  
+  }
 
 }

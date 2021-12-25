@@ -32,7 +32,6 @@ figcaption {
 
 .gap-right {
   margin-right: 5rem;
-  /* text-align: justify; */
 }
 
 .gap-bottom {
@@ -47,6 +46,11 @@ figcaption {
 .section-12-mobile {
   display: none;
 }
+
+.justify {
+  text-align: justify;
+}
+
 
 /* SECTION VISITE-BOTANIQUE */
 
@@ -151,6 +155,12 @@ figcaption {
   margin: 2rem 0;
   display: flex;
   justify-content: space-evenly;
+  margin-left: 6vw;
+}
+
+.cheval-bottom-content img {
+  max-height: 50%;
+  margin-left: 2vw;
 }
 
 /* SECTION MIEL-CANTIQUE */
@@ -213,10 +223,6 @@ figcaption {
 .jeu-video {
   display: flex;
   gap: 2rem;
-}
-
-.jeu-video iframe {
-  width: 100%;
 }
 
 .jeu-descript {
@@ -301,12 +307,15 @@ footer a {
 
 .footer-btn .btn:hover{
   border: 1px solid var(--vertcanard);
-  color: #046F78;
   transform: scale(1);
   background-color: white;
 }
 
 .footer-btn a {
+  color: white;
+}
+
+.footer-btn a:hover{
   color: #046F78;
 }
 
@@ -318,15 +327,26 @@ footer a {
   color: #046F78;
 }
 
+.credits-portfolio a {
+  text-decoration: none;
+  color: black;
+  transition: ease-in 200ms;
+}
+
+.credits-portfolio a:hover {
+  color: #046F78;
+  
+}
+
+
 /* RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE */
 
 @media(max-width:1100px) {
   
-  
   .video-desktop {
     display: none;
+    /* margin: auto !important; */
   }
-
 
   /* CHEVALIER VEGAN ------------- */
 
@@ -350,8 +370,6 @@ footer a {
     margin-left: 0;
   }
 
-
-
   /* MIEL CANTIQUE --------------- */
   .section-10-mobile p {
     margin-bottom: 0;
@@ -359,6 +377,14 @@ footer a {
 
   .section-10-mobile .date {
     margin-left: 0;
+  }
+
+  /* JEU D'AMOUR ----------------- */
+
+  .section-11-mobile .embed-responsive-item {
+    width: 70vw;
+    height: 65vh;
+    margin-left: 5vw;
   }
 
   /* FOOTER ---------------------- */
@@ -412,7 +438,6 @@ footer a {
   transition: ease-in 250ms;
 }
 
-
 .footer-btn a {
   color: #046F78;
 }
@@ -425,6 +450,13 @@ footer a {
   color: #046F78;
 }
 
+.footer-mobile button a {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 100%;
+  color: white;
+}
+
 footer p {
   width: fit-content;
   text-align: center !important;
@@ -435,11 +467,12 @@ footer p a {
 }
 
 
+
 }
 
-/* --------------- MEDIA QUERIES : 376PX ----------------- */
+/* --------------- MEDIA QUERIES : 700PX ----------------- */
 
-@media (max-width:600px) {
+@media (max-width:725px) {
 
   .footer-mobile a {
     font-size: clamp(75%, 7vw, 8vw);
@@ -452,16 +485,18 @@ footer p a {
   .footer-mobile .footer-btn button {
     margin-bottom: 2vh !important;
     width: 42%;
-    padding: auto;
+    padding:auto;
     margin: auto;
     height: auto;
     padding-bottom: 3%;
-  }
-
-  .footer-mobile .footer-btn a:hover{
-    color:var(--vertcanard);
+    padding-top: 3%;
   }
   
+
+  .footer-mobile .footer-btn button a:hover{
+    color:var(--vertcanard) !important;
+  }
+
 }
 
 @media (max-width:340px) {
