@@ -747,6 +747,14 @@ margin-bottom: 1%;
 
 }
 
+/* CHANGEMENT DE NAV : NAV MOBILE ----------------------- */
+
+@media (max-width:999px) {
+  .nav-desktop {
+    display: none;
+  }
+}
+
 /* ACCUEIL VERSION MOBILE ------------------ */
 
 @media (max-width: 766px) {
