@@ -276,6 +276,10 @@ footer .contact {
   align-items: center;
 }
 
+footer h3  {
+  font-size: 3.2vw;
+}
+
 footer a {
   text-decoration: none;
 }
@@ -329,7 +333,7 @@ footer a {
 
 .credits-portfolio a {
   text-decoration: none;
-  color: black;
+  color: black ;
   transition: ease-in 200ms;
 }
 
@@ -392,14 +396,15 @@ footer a {
   }
 
   /* FOOTER ---------------------- */
+  
   .section-12-mobile {
     height: auto;
-    
   }
 
   footer {
     height: auto;
   }
+
   .section-12-mobile .div-content{
     width: 100%;
     margin: 7vh auto 0 auto;
@@ -438,8 +443,11 @@ footer a {
 }
 
 .footer-btn .btn {
-  padding: 0 15px;
+  padding: 13px 15px;
+  width: 40%;
+  margin: auto;
   transition: ease-in 250ms;
+  margin-bottom: 2%;
 }
 
 .footer-btn a {
@@ -448,17 +456,26 @@ footer a {
 
 .footer-mobile .mail-num a {
   transition: ease-in 250ms;
+  font-size: 5.5vw;
 }
 
 .footer-mobile .mail-num a:hover {
   color: #046F78;
 }
 
-.footer-mobile button a {
+.footer-mobile a {
   text-decoration: none;
   font-size: 20px;
   line-height: 100%;
   color: white;
+}
+
+.footer-mobile .credits-portfolio a {
+  color: black;
+}
+
+.footer-mobile .credits-portfolio a:hover {
+  color: #046F78;
 }
 
 footer p {
@@ -469,6 +486,7 @@ footer p {
 footer p a {
   font-size: clamp(19px, 1.1rem, 1.5rem) !important;
 }
+
 
 
 
@@ -495,6 +513,17 @@ footer p a {
     padding-bottom: 3%;
     padding-top: 3%;
   }
+
+  .footer-btn .btn{
+  padding-bottom: 50px;
+  line-height: 120%;
+  }
+
+  .footer-btn .linkedin {
+    line-height: 195%;
+  }
+
+
   
 
   .footer-mobile .footer-btn button a:hover{

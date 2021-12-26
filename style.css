@@ -243,7 +243,8 @@ font-weight: normal;
   color: black;
 }
 
-.section-1 button {
+.section-1 .btn-ig,
+.section-1 .btn-linkedin {
  background-color: var(--vertcanard);
  margin: 0 10% 12% 0;
  background-color:#046e78;
@@ -255,11 +256,15 @@ font-weight: normal;
  font-weight:bold;
  padding:3% 10%;
  text-decoration:none;
+ text-align: center;
 }
 
-.section-1 button:hover{
+
+.section-1 .btn-ig:hover,
+.section-1 .btn-linkedin:hover{
   border: 1px solid white;
   background-color: rgba(223, 215, 215, 0.753);
+  color: #046e78;
 }
 
 .section-1 button a:hover{
@@ -747,7 +752,8 @@ margin-bottom: 1%;
 @media (max-width: 766px) {
 
   .section-1 h2,
-  .section-1 button {
+  .section-1 .btn-ig,
+  .section-1 .btn-linkedin {
     display: none;
   }
 
