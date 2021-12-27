@@ -3,6 +3,7 @@
 const imgCliquable = document.querySelectorAll('.img');
 const fenetres = document.querySelectorAll('.fmodal');
 const allBody = document.body;
+let toggle = false;
 
 class ImgModale {
 
@@ -32,9 +33,22 @@ class ImgModale {
 
 imgCliquable.forEach(element => {
 
+    toggle = !toggle;
+    console.log(toggle);
+
     element.addEventListener('click',() => {
 
-        const source = element.getAttribute('src');
+        const masource = element.getAttribute('src');
+
+        let source = `${masource}`;
+        source = source.substring(2);
+        console.log(source);
+        const indexPoint = source.indexOf(".");
+        source = source.substring(0,indexPoint);
+        console.log(source);
+        source = `./${source}original.jpg`;
+
+
         console.log(source);
         const alt = element.alt;
         const newImg = new ImgModale (source, alt);
@@ -49,30 +63,35 @@ imgCliquable.forEach(element => {
                 fenetres.forEach(fenetre => {
                     fenetre.classList.remove("blur");
                 })
-            }, 5);  
-        })
+            }, 5); 
+
+        });
+
+
+        if (toggle=== false) {
+            
+            setTimeout(() => {
+                apercuImg.remove();
+                
+                fenetres.forEach(fenetre => {
+                    fenetre.classList.remove("blur");
+                })
+            }, 5); 
+
+            toggle = !toggle;
+        }
+
+        // e.target.addEventListener('click', () => {
+            
+        //     setTimeout(() => {
+        //         apercuImg.remove();
+                
+        //         fenetres.forEach(fenetre => {
+        //             fenetre.classList.remove("blur");
+        //         })
+        //     }, 5);  
+        // });
     
     });
 });
 
-// imgCliquable.addEventListener('click',() => {
-
-//     let source = imgCliquable.getAttribute('src');
-//     console.log(source);
-//     let alt = imgCliquable.alt;
-//     let newImg = new ImgModale (source, alt);
-//     const apercuImg = document.querySelector('#imgmodale');
-//     console.log(apercuImg);
-//     const everywhere = apercuImg.parentElement;
-
-//     apercuImg.addEventListener('click', () => {
-        
-//         setTimeout(() => {
-//             apercuImg.remove();
-//             fenetre.classList.remove("blur");
-//         }, 3);
-        
-//     })
-
-
-// });
