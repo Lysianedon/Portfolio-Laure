@@ -63,7 +63,8 @@ font-weight: normal;
   transform: translate(-50%, -50%);
   transition: 250ms ease-in-out;
   opacity: 0;
-  max-width: 50%;
+  max-width: 55%;
+  /* max-height: auto; */
   /* min-width:40vw;
   max-height: auto;
   height: auto; */

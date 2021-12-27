@@ -67,7 +67,7 @@ imgCliquable.forEach(element => {
 
         });
 
-
+        
         if (toggle=== false) {
             
             setTimeout(() => {
