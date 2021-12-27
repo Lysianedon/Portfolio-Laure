@@ -16,10 +16,13 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;600&display=swap');
   </style>
 
-  <script src="script.js" defer></script>
+  <!-- <script src="script.js" defer></script> -->
+  <script src="img-modal.js" defer></script>
     <title>PORTFOLIO LAURE</title>
 </head>
 <body>
+
+
             <!------------------------------ DEBUT NAV MOBILE ------------------------------>
 
             <nav class="nav nav-mobile">
@@ -75,6 +78,7 @@
             </nav>
 <!-- SECTION PAGE D'ACCUEIL ---- SECTION PAGE D'ACCUEIL ----SECTION PAGE D'ACCUEIL --------------------->
 
+
             <div class="section-1" id="accueil">
               <div class="presentation-accueil">
 
@@ -95,8 +99,6 @@
 
                 <a href="https://instagram.com/monkey_donky?utm_medium=copy_link" target="_blank" rel="noopener noreferrer" class="btn-ig">Instagram Personnel</a>
 
-                <!-- <button> <a href="https://instagram.com/brainwatch.chronicles?utm_medium=copy_link" target="_blank">Instagram - Brainwatch</a></button>
-                <button> <a href="https://instagram.com/monkey_donky?utm_medium=copy_link" target="_blank">Instagram Personnel</a></button> -->
               </div>
 
             </div>
@@ -104,7 +106,12 @@
 
             <div class="div-wrapper section-2" id="presentation">
 
-              <div class="content-section2">
+              <!-- <div class="modal">
+           
+                <img src="./img/presentation/laure.png" alt="" srcset="" class="img">
+              </div> -->
+
+              <div class="content-section2 fmodal">
 
                 <div class="boutons-mobile">
                     <button class=" btn-linkedin"><a href="https://www.linkedin.com/in/laure-mirroir-712941127/?originalSubdomain=fr" target="_blank">Linkedin</a></button>
@@ -119,7 +126,7 @@
                   En parallèle, elle réalise et assiste à la  <span class="gras">création de différents court-métrages</span> avec le collectif Brainwatch. 
                   </p>
 
-                  <img src="./img/presentation/laure.png" alt="photo Laure" srcset="" class="photo-laure">
+                  <img src="./img/presentation/laure.png" alt="photo Laure" srcset="" class="photo-laure img">
                   <img src="./img/presentation/bande-couleur.png" alt="bande couleur" srcset="" class="bande-couleur">
 
               </div>
@@ -189,7 +196,7 @@
             <!-- ----------------VERSION DESKTOP ------------------- -->
            </div>
 
-           <div class="section-3 div-wrapper" id="projets-theatre">
+           <div class="section-3 div-wrapper fmodal" id="projets-theatre">
 
               <div class="col-texte">
 
@@ -216,13 +223,13 @@
 
               <div class="col-img">
 
-                <img src="./img/oexmelin/1.png" alt="" srcset="" class="bigpicture">
+                <img src="./img/oexmelin/1.png" alt="" srcset="" class="bigpicture img">
 
                 <div class="collection-photos">
 
-                  <img src="./img/oexmelin/2.png" alt="oexmelin" srcset="" class="smallpictures pictureone">
-                  <img src="./img/oexmelin/3.png" alt="oexmelin" srcset="" class="margin smallpictures">
-                  <img src="./img/oexmelin/4.png" alt="oexmelin" srcset="" class="smallpictures">
+                  <img src="./img/oexmelin/2.png" alt="oexmelin" srcset="" class="smallpictures pictureone img">
+                  <img src="./img/oexmelin/3.png" alt="oexmelin" srcset="" class="margin smallpictures img">
+                  <img src="./img/oexmelin/4.png" alt="oexmelin" srcset="" class="smallpictures img">
 
                 </div>
                 <p class="credits">Crédits photos © Alexandre Morelli</p>
@@ -254,6 +261,7 @@
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          
                         </div>
 
                  <!-- -------------- IMAGES CAROUSSEL MOBILE ------------------------  -->
@@ -290,11 +298,12 @@
             </div>
            
            </div>
+
            
 
            <!-------------------------------- VERSION DESKTOP BALADE FLUVIALE ---------------------------- -->
 
-           <div class="section-4 div-wrapper">
+           <div class="section-4 div-wrapper fmodal">
 
                 <div class="div-content">
   
@@ -318,13 +327,13 @@
               </div>
 
               <div class="column-two">
-                <img src="./img/balades-fluviales/Big.png" alt="balade fluviale" srcset="" class="big">
+                <img src="./img/balades-fluviales/Big.png" alt="balade fluviale" srcset="" class="big img">
               </div>
               
               <div class="column-three">
-                <img src="./img/balades-fluviales/small1.png" alt="" class="small1">
-                <img src="./img/balades-fluviales/small2.png" alt="" class="small2">
-                <img src="./img/balades-fluviales/small3.png" alt="" class="small3">
+                <img src="./img/balades-fluviales/small1.png" alt="" class="small1 img">
+                <img src="./img/balades-fluviales/small2.png" alt="" class="small2 img">
+                <img src="./img/balades-fluviales/small3.png" alt="" class="small3 img">
               </div>
               
             </div> 
@@ -399,14 +408,14 @@
  <!-- VERSION DESKTOP ARCHEOLOGUE  --------- -->
 
 
-    <div class="div-wrapper section-5">
+    <div class="div-wrapper section-5 fmodal">
       
 
       <div class="div-content d-flex">
 
         <div class="collection-photos d-flex flex-column col-3">
-          <img src="./img/archeologue/small1.png" alt="" srcset="" class="mb-5">
-          <img src="./img/archeologue/small2.png" alt="" srcset="">
+          <img src="./img/archeologue/small1.png" alt="" srcset="" class="mb-5 img">
+          <img src="./img/archeologue/small2.png" alt="" srcset="" class="img">
           <!-- <img src="./img/archeologue/small3.png" alt="" srcset="" class="mb-5"> -->
         </div>
 
@@ -429,34 +438,34 @@
 
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="./img/archeologue/a.png" class="d-block w-100" alt="...">
+                  <img src="./img/archeologue/a.png" class="d-block w-100 img" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/archeologue/b.png" class="d-block w-100" alt="...">
+                  <img src="./img/archeologue/b.png" class="d-block w-100 img" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/archeologue/c.png" class="d-block w-100" alt="...">
+                  <img src="./img/archeologue/c.png" class="d-block w-100 img" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/archeologue/d.png" class="d-block w-100" alt="...">
+                  <img src="./img/archeologue/d.png" class="d-block w-100 img" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/archeologue/e.png" class="d-block w-100" alt="...">
+                  <img src="./img/archeologue/e.png" class="d-block w-100 img" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/archeologue/f.png" class="d-block w-100" alt="...">
+                  <img src="./img/archeologue/f.png" class="d-block w-100 img" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/archeologue/g.png" class="d-block w-100" alt="...">
+                  <img src="./img/archeologue/g.png" class="d-block w-100 img" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/archeologue/h.png" class="d-block w-100" alt="...">
+                  <img src="./img/archeologue/h.png" class="d-block w-100 img" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/archeologue/i.png" class="d-block w-100" alt="...">
+                  <img src="./img/archeologue/i.png" class="d-block w-100 img" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/archeologue/j.png" class="d-block w-100" alt="...">
+                  <img src="./img/archeologue/j.png" class="d-block w-100 img" alt="...">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -563,7 +572,7 @@
 
     <!-- ----------VERSION DESKTOP FESTIVAL DES VENDANGES --------- -->
 
-    <div class="section-6 div-wrapper">
+    <div class="section-6 div-wrapper fmodal">
       <div class="div-content">
 
         <div class="titre-date">
@@ -573,14 +582,14 @@
 
         <div class="mescolonnes">
           <div class="colonne-gauche">
-            <img src="./img/festival-vendanges/big.png" alt="festival vendanges" srcset="" class="big">
+            <img src="./img/festival-vendanges/big.png" alt="festival vendanges" srcset="" class="big img">
           </div>
           <div class="colonne-droite">
             <p>La compagnie Méliadès et la plasticienne Amora Doris en lien avec les Balnéolais∙es, ont créé   le décor de la Fête des vendanges.
               Les costumes flottant dans les airs, les guirlandes colorées et les totems embarquent les habitants dans un voyage à travers les carnavals d’Europe.
             </p>
 
-            <img src="./img/festival-vendanges/small.png" alt="festival vendanges" srcset="" class="small">
+            <img src="./img/festival-vendanges/small.png" alt="festival vendanges" srcset="" class="small img">
             <!-- <img src="./img/festival-vendanges/2.png" alt="" srcset="" class="deux"> -->
           </div>
       </div>
@@ -654,7 +663,7 @@
 </div>
 </div>
     <!------------------------ VERSION DESKTOP VISITE-BOTANIQUE ------------------------>
-    <section class="visite-botanique">
+    <section class="visite-botanique fmodal">
 
       <div class="visite-content">
         <!-- left -->
@@ -673,10 +682,10 @@
         </div>
         <!-- right -> images -->
         <div class="visite-img bigpicture">
-          <img src="pauline/visite-botanique/visite-botanique1.png" alt="image visite botanique">
-          <img src="pauline/visite-botanique/visite-botanique2.png" alt="image visite botanique">
-          <img src="pauline/visite-botanique/visite-botanique3.png" alt="image visite botanique">
-          <img src="pauline/visite-botanique/visite-botanique4.png" alt="image visite botanique">
+          <img src="pauline/visite-botanique/visite-botanique1.png" alt="image visite botanique" class="img">
+          <img src="pauline/visite-botanique/visite-botanique2.png" alt="image visite botanique"class="img">
+          <img src="pauline/visite-botanique/visite-botanique3.png" alt="image visite botanique"class="img">
+          <img src="pauline/visite-botanique/visite-botanique4.png" alt="image visite botanique"class="img">
         </div>
 
       </div>
@@ -749,7 +758,7 @@
 
 
     <!---------------------- VERSION DESKTOP PAUVRETE-RICHESSE ------------------------>
-    <section class="pauvrete-richesse">
+    <section class="pauvrete-richesse fmodal">
 
       <div class="pauvre-content">
         <!-- left -->
@@ -762,7 +771,7 @@
             <h4>Stage - 2015</h4>
           </div>
           <div class="gap-bottom">
-            <img class="bigpicture" src="pauline/pauvrete-richesse/pauvrete-richesse1-©HervéBellamy.png" alt="photo spectacle pauvrete, richesse, homme et bete">
+            <img class="bigpicture img" src="pauline/pauvrete-richesse/pauvrete-richesse1-©HervéBellamy.png" alt="photo spectacle pauvrete, richesse, homme et bete">
             <figcaption>Crédits photos © Hervé Bellamy</figcaption>
           </div>
           <!-- descriptif -->
@@ -773,9 +782,9 @@
         </div>
         <!-- right -> images -->
         <div class="pauvre-img">
-          <img src="pauline/pauvrete-richesse/pauvrete-richesse2.png" alt="image visite botanique">
-          <img src="pauline/pauvrete-richesse/pauvrete-richesse3.png" alt="image visite botanique">
-          <img src="pauline/pauvrete-richesse/pauvrete-richesse4.png" alt="image visite botanique">
+          <img src="pauline/pauvrete-richesse/pauvrete-richesse2.png" alt="image visite botanique"class="img">
+          <img src="pauline/pauvrete-richesse/pauvrete-richesse3.png" alt="image visite botanique"class="img">
+          <img src="pauline/pauvrete-richesse/pauvrete-richesse4.png" alt="image visite botanique"class="img">
         </div>
 
       </div>
@@ -851,7 +860,7 @@
 </div>
 
  <!------------------------ VERSION DESKTOP CHEVALIER_VEGAN ------------------------>
-  <article id="proj-court-metrage">
+  <article id="proj-court-metrage fmodal">
 
    
     <section class="chevalier-vegan" id="courts-metrages">
@@ -875,14 +884,14 @@
         </div>
         <!-- top-right -->
         <div class="top-right">
-          <img src="pauline/cheval-vegan/chevalier-vegan1.png" alt="photo chevalier vegan court-métrages">
+          <img src="pauline/cheval-vegan/chevalier-vegan1.png" alt="photo chevalier vegan court-métrages" class="img"class="img">
         </div>
       </div>
       <!-- section-bottom-content -->
       <div class="cheval-bottom-content">
-        <img src="pauline/cheval-vegan/chevalier-vegan2.png" alt="photo chevalier vegan court-métrages">
-        <img src="pauline/cheval-vegan/chevalier-vegan3.png" alt="photo chevalier vegan court-métrages">
-        <img src="pauline/cheval-vegan/chevalier-vegan4.png" alt="photo chevalier vegan court-métrages">
+        <img src="pauline/cheval-vegan/chevalier-vegan2.png" alt="photo chevalier vegan court-métrages"class="img">
+        <img src="pauline/cheval-vegan/chevalier-vegan3.png" alt="photo chevalier vegan court-métrages"class="img">
+        <img src="pauline/cheval-vegan/chevalier-vegan4.png" alt="photo chevalier vegan court-métrages"class="img">
       </div>
       
     </section>
@@ -965,7 +974,7 @@
 </div>
 
     <!------------------------ VERSION DESKTOP MIEL-CANTIQUE ------------------------>
-    <section class="miel-cantique">
+    <section class="miel-cantique fmodal">
 
       <!-- Title -->
       <div class="miel-title">
@@ -997,25 +1006,25 @@
 
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="pauline/miel-cantique/miel1.png" class="d-block w-100" alt="...">
+                  <img src="pauline/miel-cantique/miel1.png" class="d-block w-100 img" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="pauline/miel-cantique/miel2.png" class="d-block w-100" alt="...">
+                  <img src="pauline/miel-cantique/miel2.png" class="d-block w-100 img" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="pauline/miel-cantique/miel3.png" class="d-block w-100" alt="...">
+                  <img src="pauline/miel-cantique/miel3.png" class="d-block w-100 img" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="pauline/miel-cantique/miel4.png" class="d-block w-100" alt="...">
+                  <img src="pauline/miel-cantique/miel4.png" class="d-block w-100 img" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="pauline/miel-cantique/miel5.png" class="d-block w-100" alt="...">
+                  <img src="pauline/miel-cantique/miel5.png" class="d-block w-100 img" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="pauline/miel-cantique/miel6.png" class="d-block w-100" alt="...">
+                  <img src="pauline/miel-cantique/miel6.png" class="d-block w-100 img" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="pauline/miel-cantique/miel7.png" class="d-block w-100" alt="...">
+                  <img src="pauline/miel-cantique/miel7.png" class="d-block w-100 img" alt="...">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -1075,7 +1084,7 @@
        </div>
 
     <!------------------------ VERSION DESKTOP JEU-AMOUR ------------------------>
-    <section class="jeu-amour">
+    <section class="jeu-amour fmodal">
 
       <!-- Title -->
       <div class="jeu-title">
@@ -1100,13 +1109,13 @@
 
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="pauline/jeu-amour/jeu-amour1.png" class="d-block w-100" alt="...">
+                  <img src="pauline/jeu-amour/jeu-amour1.png" class="d-block w-100 img" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="pauline/jeu-amour/jeu-amour2.png" class="d-block w-100" alt="...">
+                  <img src="pauline/jeu-amour/jeu-amour2.png" class="d-block w-100 img" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="pauline/jeu-amour/jeu-amour3.png" class="d-block w-100" alt="...">
+                  <img src="pauline/jeu-amour/jeu-amour3.png" class="d-block w-100 img" alt="...">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
