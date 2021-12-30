@@ -44,6 +44,7 @@ font-weight: normal;
 
 .credits {
   font-size: 13.3px !important;
+
 }
 
 .justify {
@@ -396,8 +397,7 @@ font-weight: normal;
 }
 
 .section-3 .description {
-  /* display: flex;
-  flex-direction: column; */
+
   align-items:flex-end;
   padding-top:21%;
   padding-right: 15%;
@@ -503,15 +503,20 @@ padding-left: 2%;
 font-size: 3vw;
 }
 
+.section-4 .small3{
+  margin-bottom: 0;
+  padding: 0;
+}
+
 .section-4 .big{
 max-height: 85%;
 width: auto;
 }
 
 .section-4 .credits {
-text-align: end;
-margin-top: -15Vh;
-font-size: 13.3px;
+  text-align:right;
+  margin-top: -80px;
+  font-size: 13.3px;
 }
 
 /* SECTION 5 : (BOOTSTRAP HTML) -- CAROUSSEL PHOTOS ------------------------------------------ */
@@ -727,11 +732,6 @@ margin-bottom: 1%;
       padding-bottom: 5%;
     }
 
-    .content-section2 .boutons-mobile {
-        display: initial;
-        display: flex;
-    }
-
     .section-2 button {
       background-color: var(--vertcanard);
       /* margin-right: 15%;  */
@@ -826,6 +826,10 @@ margin-bottom: 1%;
     max-height: 10%;
   }
 
+  .content-section2 .boutons-mobile {
+    display: initial;
+    display: flex;
+}
 
 }
 
