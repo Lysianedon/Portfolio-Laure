@@ -72,7 +72,8 @@ grandesImages.forEach(element => {
     toggle = !toggle;
     console.log(toggle);
 
-    element.addEventListener('click',() => {
+    element.addEventListener('click',(e) => {
+        event.stopPropagation();
 
         let source = element.getAttribute('src');
         const alt = element.alt;
@@ -109,9 +110,9 @@ console.log("toggle avant clic sur image:",toggle);
 //ADDING AN EVENT LISTENER TO MY SMALL IMAGES TO DISPLAY A MODAL OVERVIEW WHEN WE CLICK ON THEM
 
 imgCliquable.forEach(element => {
-
-    element.addEventListener('click',() => {
-
+    
+    element.addEventListener('click',(e) => {
+        event.stopPropagation();
         isApercuOpen = !isApercuOpen;
         const masource = element.getAttribute('src');
 

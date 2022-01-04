@@ -65,10 +65,6 @@ font-weight: normal;
   transition: 250ms ease-in-out;
   opacity: 0;
   max-width: 55%;
-  /* max-height: auto; */
-  /* min-width:40vw;
-  max-height: auto;
-  height: auto; */
 }
 
 .bigImg-Modale {
@@ -83,7 +79,7 @@ font-weight: normal;
 /* FENETRE MODALE IMAGES JAVASCRIPT ------------------------ */
 
 .modale img {
-  position: absolute;
+  /* position: absolute; */
   transform: translate(-50%,-50%);
   top: 50%;
   left: 50%;
