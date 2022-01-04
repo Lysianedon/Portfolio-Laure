@@ -68,6 +68,7 @@ class BigImgModale {
 
 //ADDING AN EVENT LISTENER TO MY BIG IMAGES TO DISPLAY A MODAL OVERVIEW WHEN WE CLICK ON THEM
 
+
 grandesImages.forEach(element => {
 
     toggle = !toggle;
