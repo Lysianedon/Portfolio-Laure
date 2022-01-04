@@ -68,7 +68,6 @@ class BigImgModale {
 
 //ADDING AN EVENT LISTENER TO MY BIG IMAGES TO DISPLAY A MODAL OVERVIEW WHEN WE CLICK ON THEM
 
-
 grandesImages.forEach(element => {
 
     toggle = !toggle;
@@ -106,6 +105,7 @@ grandesImages.forEach(element => {
 let isSortieViaApercu = false;
 let isApercuOpen = false;
 console.log("toggle avant clic sur image:",toggle);
+
 
 //ADDING AN EVENT LISTENER TO MY SMALL IMAGES TO DISPLAY A MODAL OVERVIEW WHEN WE CLICK ON THEM
 
@@ -147,7 +147,7 @@ imgCliquable.forEach(element => {
                         isApercuOpen = !isApercuOpen;
                         toggle = !toggle;
                     })
-                }     
+                } 
 
             // }, 5);
         })
@@ -155,6 +155,7 @@ imgCliquable.forEach(element => {
     });
 
 });
+
 
 // DO NOT DELEATE * ORIGINAL CODE + TESTINGS * DO NOT DELEATE * ORIGINAL CODE + TESTINGS ***************************
 
