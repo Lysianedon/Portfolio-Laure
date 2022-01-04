@@ -67,6 +67,7 @@ class BigImgModale {
 };
 
 //ADDING AN EVENT LISTENER TO MY BIG IMAGES TO DISPLAY A MODAL OVERVIEW WHEN WE CLICK ON THEM
+
 grandesImages.forEach(element => {
 
     toggle = !toggle;
@@ -83,21 +84,19 @@ grandesImages.forEach(element => {
 
         //Activating an event listener to the body once (and once only) the image is open : 
         //When we click on the body, the overview/modal img will be closed;
-        setTimeout(() => {
 
-            allBody.addEventListener('click', () => {
-                              
-                setTimeout(() => {
-                    
-                    apercuImg.remove();  
+        allBody.addEventListener('click', () => {
+                            
+            // setTimeout(() => {
+                
+                apercuImg.remove();  
 
-                    fenetres.forEach(fenetre => {
-                        fenetre.classList.remove("blur");
-                    });                
+                fenetres.forEach(fenetre => {
+                    fenetre.classList.remove("blur");
+                });                
 
-                }, 5);
-            })
-        }, 1000);
+            // }, 5);
+        })
 
     });
 });
@@ -130,30 +129,27 @@ imgCliquable.forEach(element => {
         //Activating an event listener to the body once the image is open : 
         //When we click on the body, the overview/modal img will be closed;
 
-        setTimeout(() => {
+        allBody.addEventListener('click', () => {
+                            
+            // setTimeout(() => {
+                
+                apercuImg.remove(); 
 
-            allBody.addEventListener('click', () => {
-                              
-                setTimeout(() => {
-                    
-                    apercuImg.remove(); 
+                isApercuOpen = false;
+                toggle = true;
+                console.log("isApercuOpen après clic body:", isApercuOpen);
+                
+                if (isApercuOpen === false && toggle === true) {
+                    fenetres.forEach(fenetre => {
 
-                    isApercuOpen = false;
-                    toggle = true;
-                    console.log("isApercuOpen après clic body:", isApercuOpen);
-                    
-                    if (isApercuOpen === false && toggle === true) {
-                        fenetres.forEach(fenetre => {
+                        fenetre.classList.remove("blur");
+                        isApercuOpen = !isApercuOpen;
+                        toggle = !toggle;
+                    })
+                }     
 
-                            fenetre.classList.remove("blur");
-                            isApercuOpen = !isApercuOpen;
-                            toggle = !toggle;
-                        })
-                    }     
-  
-                }, 5);
-            })
-        }, 1000);
+            // }, 5);
+        })
 
     });
 
