@@ -776,6 +776,10 @@ margin-bottom: 1%;
          width: 100vw;
      }
 
+     .section-3-mobile .iframe-responsive{
+       margin-left: 12% !important;
+     }
+
      /* -------- SECTION 4 : BALADE FLUVIALE --------- */
 
      .section-4-mobile .div-content,
@@ -807,7 +811,7 @@ margin-bottom: 1%;
   }
 
   .section-1 {
-    background: url('./img/accueil/img-accueil.png')cover no-repeat;
+    background: url('./img/accueil/img-accueil.png') cover no-repeat;
     background-size:160%;
     height: auto;
     background-blend-mode: overlay;
